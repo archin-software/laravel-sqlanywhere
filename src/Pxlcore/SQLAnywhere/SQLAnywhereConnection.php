@@ -35,14 +35,15 @@ class SQLAnywhereConnection extends Connection {
 		$this->useDefaultPostProcessor();
 	}
 
-	/**
-	 * Run a select statement against the database.
-	 *
-	 * @param  string  $query
-	 * @param  array   $bindings
-	 * @return array
-	 */
-	public function select($query, $bindings = array())
+    /**
+     * Run a select statement against the database.
+     *
+     * @param string $query
+     * @param array $bindings
+     * @param bool $useReadPdo
+     * @return array
+     */
+	public function select($query, $bindings = array(), $useReadPdo = true)
 	{
 		// new version since Laravel 5.4
 		// /vendor/laravel/framework/src/Illuminate/Database/Connection.php
