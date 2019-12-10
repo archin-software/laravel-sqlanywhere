@@ -1,6 +1,6 @@
 {
     "name": "archin-software/laravel-sqlanywhere",
-    "description": "A Sybase driver based Eloquent model and Query builder for Laravel 5. Based on Cagartner module.",
+    "description": "A Sybase driver based Eloquent model and Query builder for Laravel 6. Based on Cagartner module.",
     "keywords": ["laravel","eloquent","sybase","sqlanywhere","database","model"],
     "authors": [
         {
@@ -10,9 +10,9 @@
     ],
     "license" : "MIT",
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": ">=4.*",
-        "illuminate/database": ">=4.*",
+        "php": "^7.2",
+        "illuminate/support": "^6.2",
+        "illuminate/database": "^6.2",
         "pxlcore/sql-anywhere-client": "dev-master"
     },
     "autoload": {
