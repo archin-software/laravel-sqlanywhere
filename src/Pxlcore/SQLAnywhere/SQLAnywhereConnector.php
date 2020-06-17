@@ -59,6 +59,10 @@ class SQLAnywhereConnector extends Connector implements ConnectorInterface {
             $dsn.= ";ENG={$dbserver}";
         }
 
-		return $dsn;
+        if (isset($file)) {
+            $dsn.= ";DBF=\"{$file}\"";
+        }
+
+        return $dsn;
     }
 }

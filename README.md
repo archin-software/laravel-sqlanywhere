@@ -81,6 +81,7 @@ DB_SQLA_SERVER   = dbdemo
 DB_SQLA_DATABASE = dbname
 DB_SQLA_USERNAME = dbuser
 DB_SQLA_PASSWORD = dbpwd
+DB_SQLA_FILE     = dbfile
 ```
 
 Just add a new array to the `connections` array in `config/database.php`.
@@ -93,6 +94,7 @@ Just add a new array to the `connections` array in `config/database.php`.
     'database'    => env('DB_SQLA_DATABASE', 'dbname'),
     'username'    => env('DB_SQLA_USERNAME', 'dbuser'),
     'password'    => env('DB_SQLA_PASSWORD', 'dbpwd'),
+    'file'        => env('DB_SQLA_FILE'),
     'charset'     => 'utf8',
     'prefix'      => '',
     'auto_commit' => true,
